@@ -33,7 +33,7 @@ header {
     font-family: 'Lobster', cursive;
     font-size: 48px;
     color: #177fe0; /* Logo color unchanged */
-    position: absolute;
+    position: relative;
     top: -5px; /* Moves text slightly upward */
 }
 
@@ -41,12 +41,12 @@ header {
 .logo h1::after {
     content: "Emmaculate Designs"; /* Same text */
     position: absolute;
-    top: 20px; /* Corrected downward shift */
+    top: 6px; /* Corrected downward shift */
     left: 3px; /* Gentle right shift */
     white-space: nowrap; /* Prevents line break */
     color: #0e4d8b; /* Deep muted blue shadow */
-    opacity: 1.0; /* Soft visibility */
-    z-index: -1; /* Keeps it behind */
+    opacity: 0.6; /* Soft visibility */
+    z-index: 1; /* Ensures it stays behind the logo but above the header */
 }
 
 /* Navigation on the Right */
