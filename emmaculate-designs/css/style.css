@@ -5,19 +5,24 @@ body {
     color: #333;
 }
 header {
+    position: sticky; /* Keeps it at the top */
+    top: 0;
     background-color: #333;
     color: white;
-    padding: 20px;
-    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between; /* Spaces out title and links */
+    align-items: center;
+    width: 100%;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex; /* Makes links align horizontally */
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
