@@ -11,7 +11,7 @@ body {
 /* Header Styling */
 header {
     width: 100vw; /* Full width */
-    height: auto; /* Expands only as needed */
+    height: 10vw; /* Expands only as needed */
     padding: 20px 40px; /* Adds spacing */
     background: linear-gradient(to bottom, #0057b8, #a3c8e0); /* Vibrant to muted blue */
     border-bottom-left-radius: 20px; /* Rounded left corner */
