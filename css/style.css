@@ -38,7 +38,19 @@ nav ul li a:hover {
 }
 .logo h1 {
     font-family: 'Lobster', cursive;
-    font-size: 48px; /* Adjust as needed */
-    color: #177fe0; /* Matching your purple gradient */
-    text-shadow: 7px 7px 14px rgb(121, 202, 255); /* Soft glow */
+    font-size: 48px;
+    color: #177fe0; /* Your new main color */
+    position: relative; /* Allows shifting */
+    top: -5px; /* Moves text slightly upward */
+}
+
+/* Creates the offset lighter blue duplicate */
+.logo h1::after {
+    content: "Emmaculate Designs"; /* Same text */
+    position: absolute;
+    top: 5px; /* Lower it slightly */
+    left: 5px; /* Shift slightly right */
+    color: #add8e6; /* Light blue */
+    opacity: 1; /* Full opacity */
+    z-index: -1; /* Sends it behind the original */
 }
