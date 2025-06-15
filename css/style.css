@@ -48,9 +48,9 @@ nav ul li a:hover {
 .logo h1::after {
     content: "Emmaculate Designs"; /* Same text */
     position: absolute;
-    top: 5px; /* Lower it slightly */
-    left: 5px; /* Shift slightly right */
-    color: #add8e6; /* Light blue */
-    opacity: 1; /* Full opacity */
-    z-index: -1; /* Sends it behind the original */
+    top: 3px; /* Move down slightly */
+    left: 3px; /* Offset gently */
+    color: #1e90ff; /* Slightly lighter than main text */
+    opacity: 0.85; /* Softer appearance */
+    z-index: -1;
 }
