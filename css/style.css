@@ -39,6 +39,6 @@ nav ul li a:hover {
 .logo h1 {
     font-family: 'Lobster', cursive;
     font-size: 48px; /* Adjust as needed */
-    color: #6a0dad; /* Matching your purple gradient */
-    text-shadow: 2px 2px 4px rgba(106, 13, 173, 0.3); /* Soft glow */
+    color: #177fe0; /* Matching your purple gradient */
+    text-shadow: 7px 7px 14px rgb(121, 202, 255); /* Soft glow */
 }
