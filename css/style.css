@@ -5,23 +5,22 @@ body {
     color: #333;
 }
 header {
-    position: sticky; /* Keeps it at the top */
+    position: sticky;
     top: 0;
-    color: black;
-    padding: 15px;
+    width: 100%;
     background: linear-gradient(to bottom, #6a0dad, white); /* Purple to White Gradient */
     border: 2px solid #c8a2c8; /* Lavender Outline */
-    padding: 20px; /* Adds space inside header */
-    text-align: center; /* Centers text */
+    padding: 20px;
+    text-align: center;
     display: flex;
-    justify-content: space-between; /* Spaces out title and links */
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
-    display: flex; /* Makes links align horizontally */
+    display: flex;
 }
 
 nav ul li {
@@ -29,11 +28,11 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff; /* White for contrast */
     text-decoration: none;
     font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #ff4500;
+    color: #ff4500; /* Accent hover effect */
 }
