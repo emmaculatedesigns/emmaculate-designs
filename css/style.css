@@ -9,9 +9,7 @@ body {
 /* Header Styling */
 header {
     width: 100vw; /* Full width */
-    height: 80vh; /* Adjusted height */
-    padding-top: 40px; /* Adds extra space above */
-    padding-left: 20px; /* Slight shift left */
+    height: 8h; /* Original full-page height */
     background: linear-gradient(to bottom, #0057b8, #a3c8e0); /* Vibrant to muted blue */
     border-bottom-left-radius: 20px; /* Rounded left corner */
     border-bottom-right-radius: 20px; /* Rounded right corner */
