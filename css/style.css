@@ -11,7 +11,7 @@ body {
 /* Header Styling */
 header {
     width: 100vw; /* Full width */
-    height: 10vw; /* Expands only as needed */
+    height: auto; /* Expands only as needed */
     padding: 20px 40px; /* Adds spacing */
     background: linear-gradient(to bottom, #0057b8, #a3c8e0); /* Vibrant to muted blue */
     border-bottom-left-radius: 20px; /* Rounded left corner */
@@ -33,7 +33,7 @@ header {
     font-family: 'Lobster', cursive;
     font-size: 48px;
     color: #177fe0; /* Logo color unchanged */
-    position: relative;
+    position: absolute;
     top: -5px; /* Moves text slightly upward */
 }
 
@@ -41,11 +41,11 @@ header {
 .logo h1::after {
     content: "Emmaculate Designs"; /* Same text */
     position: absolute;
-    top: 6px; /* Corrected downward shift */
+    top: 20px; /* Corrected downward shift */
     left: 3px; /* Gentle right shift */
     white-space: nowrap; /* Prevents line break */
     color: #0e4d8b; /* Deep muted blue shadow */
-    opacity: 0.6; /* Soft visibility */
+    opacity: 1.0; /* Soft visibility */
     z-index: -1; /* Keeps it behind */
 }
 
