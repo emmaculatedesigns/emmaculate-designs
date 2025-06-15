@@ -7,15 +7,17 @@ body {
 header {
     position: sticky; /* Keeps it at the top */
     top: 0;
-    background-color: #333;
-    color: white;
+    color: black;
     padding: 15px;
+    background: linear-gradient(to bottom, #6a0dad, white); /* Purple to White Gradient */
+    border: 2px solid #c8a2c8; /* Lavender Outline */
+    padding: 20px; /* Adds space inside header */
+    text-align: center; /* Centers text */
     display: flex;
     justify-content: space-between; /* Spaces out title and links */
     align-items: center;
     width: 100%;
 }
-
 nav ul {
     list-style: none;
     padding: 0;
