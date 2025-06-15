@@ -4,7 +4,7 @@ body {
     text-align: center;
     background-color: #13355c;
     color: #13355c;
-    margin: 0; /* Remove any unwanted gap */
+    margin: 0; /* Ensures no unwanted gap above */
     padding: 0;
 }
 
@@ -38,10 +38,10 @@ header {
 .logo h1::after {
     content: "Emmaculate Designs"; /* Same text */
     position: absolute;
-    top: 4px; /* Gentle downward shadow */
-    left: 2px; /* Minimal right shift */
+    top: 6px; /* Corrected downward shift */
+    left: 3px; /* Gentle right shift */
     white-space: nowrap; /* Prevents line break */
-    color: #0e4d8b; /* Deeper shadow effect */
+    color: #0e4d8b; /* Deep muted blue shadow */
     opacity: 0.6; /* Soft visibility */
     z-index: -1; /* Keeps it behind */
 }
