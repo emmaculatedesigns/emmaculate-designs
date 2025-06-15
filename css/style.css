@@ -12,17 +12,20 @@ body {
 header {
     width: 100vw; /* Full width */
     height: auto; /* Expands only as needed */
-    padding-top: 60px; /* Adds extra space above */
-    padding-left: 25px; /* Slight left shift */
+    padding: 20px 40px; /* Adds spacing */
     background: linear-gradient(to bottom, #0057b8, #a3c8e0); /* Vibrant to muted blue */
     border-bottom-left-radius: 20px; /* Rounded left corner */
     border-bottom-right-radius: 20px; /* Rounded right corner */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between; /* Moves logo left, nav right */
     align-items: center;
-    position: relative;
     border: 2px solid #3578a8; /* Matching border */
+}
+
+/* Logo on the Left */
+.logo {
+    display: flex;
+    justify-content: flex-start;
 }
 
 /* Logo Styling */
@@ -46,13 +49,16 @@ header {
     z-index: -1; /* Keeps it behind */
 }
 
-/* Navigation Styles */
+/* Navigation on the Right */
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
-    width: 100%;
+    gap: 20px;
 }
 
 nav ul li {
