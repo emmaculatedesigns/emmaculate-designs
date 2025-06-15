@@ -5,16 +5,19 @@ body {
     color: #13355c;
 }
 header {
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    background: linear-gradient(to bottom, #3a4eff, #7383ca); /* Gradient */
+    border-bottom-left-radius: 20px; /* Rounded left corner */
+    border-bottom-right-radius: 20px; /* Rounded right corner */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: sticky;
     top: 0;
-    width: 100%;
-    background: linear-gradient(to bottom, #33ffd3, rgb(192, 235, 222)); /* Purple to White Gradient */
-    border: 2px solid #4bca6b; /* Lavender Outline */
     padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border: 2px solid #4bca6b; /* Lavender Outline */
 }
 
 nav ul {
