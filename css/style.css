@@ -1,29 +1,56 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #13355c;
     color: #13355c;
 }
+
+/* Header Styling */
 header {
     width: 100vw; /* Full width */
-    height: 100vh; /* Full height */
-    background: linear-gradient(to bottom, #3a4eff, #7383ca); /* Gradient */
+    height: 80vh; /* Adjusted height */
+    padding-top: 40px; /* Adds extra space above */
+    padding-left: 20px; /* Slight shift left */
+    background: linear-gradient(to bottom, #0057b8, #a3c8e0); /* Vibrant to muted blue */
     border-bottom-left-radius: 20px; /* Rounded left corner */
     border-bottom-right-radius: 20px; /* Rounded right corner */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: sticky;
-    top: 0;
-    padding: 20px;
-    border: 2px solid #4bca6b; /* Lavender Outline */
+    position: relative;
+    border: 2px solid #3578a8; /* Border matching gradient */
 }
 
+/* Logo Styling */
+.logo h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 48px;
+    color: #177fe0; /* Logo color remains unchanged */
+    position: relative;
+    top: -5px; /* Moves text slightly upward */
+}
+
+/* Offset Underwording Effect */
+.logo h1::after {
+    content: "Emmaculate Designs"; /* Same text */
+    position: absolute;
+    top: 2px; /* Subtle downward shift */
+    left: 2px; /* Slight right shift */
+    white-space: nowrap; /* Prevents line break */
+    color: #6fa8dc; /* Slightly muted lighter blue */
+    opacity: 0.7; /* Soft visibility */
+    z-index: -1; /* Keeps it behind */
+}
+
+/* Navigation Styles */
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 nav ul li {
@@ -31,7 +58,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* White for contrast */
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -39,23 +66,3 @@ nav ul li a {
 nav ul li a:hover {
     color: #ff4500; /* Accent hover effect */
 }
-.logo h1 {
-    font-family: 'Lobster', cursive;
-    font-size: 48px;
-    color: #177fe0; /* Your new main color */
-    position: relative; /* Allows shifting */
-    top: -5px; /* Moves text slightly upward */
-}
-
-/* Creates the offset lighter blue duplicate */
-.logo h1::after {
-    content: "Emmaculate Designs"; /* Same text */
-    position: absolute;
-    top: 3px; /* Slightly offset downward */
-    left: 3px; /* Offset right */
-    white-space: nowrap; /* Prevents line break */
-    color: #1e90ff; /* Slightly lighter than main text */
-    opacity: 0.85; /* Subtle look */
-    z-index: -1; /* Keeps it behind */
-}
-
